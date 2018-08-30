@@ -147,7 +147,7 @@ Add lines for Mexico and the US, color lines by country and add a legend
 canada_fixed %>% 
   ggplot(aes(x = year, y = lifeExp, colour=country)) + geom_line() +
   geom_line(data = life5060 %>% 
-              filter(country %in% c("United States", "Mexico")))
+              filter(country %in% c("United States", "Mexico", "Australia")))
 
 ```
 
